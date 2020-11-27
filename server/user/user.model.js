@@ -7,6 +7,10 @@ const APIError = require('../helpers/APIError');
  * User Schema
  */
 const UserSchema = new mongoose.Schema({
+  openid: {
+    type: String,
+    required: true
+  },
   username: {
     type: String,
     required: true
